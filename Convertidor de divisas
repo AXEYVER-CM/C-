@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float dolares;
+    int moneda;
+    cout << "Ingrese cantidad en dólares: ";
+    cin >> dolares;
+    cout << "Seleccione moneda (1=Pesos, 2=Euros, 3=Yenes): ";
+    cin >> moneda;
+    switch (moneda) {
+        case 1: cout << "En pesos: " << dolares * 57.5 << endl; break;
+        case 2: cout << "En euros: " << dolares * 0.91 << endl; break;
+        case 3: cout << "En yenes: " << dolares * 137.2 << endl; break;
+        default: cout << "Opción inválida\n";
+    }
+    return 0;
+}
