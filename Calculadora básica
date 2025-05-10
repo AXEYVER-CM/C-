@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+    char oper;
+    cout << "Ingrese dos números: ";
+    cin >> a >> b;
+    cout << "Operación (+, -, *, /): ";
+    cin >> oper;
+    switch (oper) {
+        case '+': cout << "Resultado: " << a + b << endl; break;
+        case '-': cout << "Resultado: " << a - b << endl; break;
+        case '*': cout << "Resultado: " << a * b << endl; break;
+        case '/': cout << (b != 0 ? "Resultado: " + to_string(a / b) : "Error: División por cero") << endl; break;
+        default: cout << "Operación inválida\n";
+    }
+    return 0;
+}
